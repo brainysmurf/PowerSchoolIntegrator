@@ -17,15 +17,15 @@ Assumptions about tools that PowerSchool integrates with:
 Exemplar case:
 
 	* PowerSchool is the school's central database
-	* PowerSchool uses LDAP for authentication
-	* Moodle is used for courses, uses same LDAP for authentication
+	* LDAP is used for single authentication everywhere
+	* Moodle is used for courses
 	* DaviCal is used for calendering
-	* Postfix email server provides students with solid email offerings
-	* MediaCore is used for streaming videos	
+	* Postfix is used for email
+	* MediaCore is used for streaming videos
 
 Requirements:
 
 	* This integrator lives on a linux box or virtualized space somewhere
 	* The integrator only handles the software to actually integrate
 	* You still need to set up the box (or virtual server) to talk to the tools
-
+	* You're not intimidated by python
