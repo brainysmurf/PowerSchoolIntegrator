@@ -1,1 +1,31 @@
-Hello, world!
+All-in-one python tool for integrating tools with PowerSchool for K-12 schools.
+
+Assumptions about PowerSchool's role in K-12 school:
+
+	* PowerSchool is the central database
+	* PowerSchool is the hub of activity
+	* Other tools made available need to sync with PowerSchool at some stage
+	* Syncing once every day is sufficient for most cases (and so is the default)
+	* If syncing once a day is not often enough, then it should be instant
+
+Assumptions about tools that PowerSchool integrates with:
+
+	* They will all have different means of syncing
+	* They may have multiple means of syncing
+	* You should be able to tell the integration tool how and when these things sync
+
+Exemplar case:
+
+	* PowerSchool is the school's central database
+	* PowerSchool uses LDAP for authentication
+	* Moodle is used for courses, uses same LDAP for authentication
+	* DaviCal is used for calendering
+	* Postfix email server provides students with solid email offerings
+	* MediaCore is used for streaming videos	
+
+Requirements:
+
+	* This integrator lives on a linux box or virtualized space somewhere
+	* The integrator only handles the software to actually integrate
+	* You still need to set up the box (or virtual server) to talk to the tools
+
